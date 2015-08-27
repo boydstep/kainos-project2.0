@@ -10,21 +10,20 @@
 
 	<h1>Add a new employee</h1>
 
-	<form method="post">
+	<form action="newEmployee.mvc" method="post">
 
 		<div>
 			<label>First Name: </label><input name="firstname" placeholder="Joe">
 		</div>
-		<div></div>
+		<div>
 		<label>Surname: </label><input name="surname" placeholder="Bloggs">
 		</div>
-		<div></div>
+		<div>
 		<label>House No: </label><input name="house_number"
 			placeholder="02825767435">
 		</div>
-		<div></div>
-		<label>Postcode: </label><input name="postcode" placeholder="BT42 5VP">
-		</div>
+		<div>
+		<label>Postcode: </label><input name="postcode" placeholder="BT42 5VP"> </div>
 		<div>
 			<label>National Insurance Number: </label><input
 				name="national_insurance_number" placeholder="JL514198Y">
@@ -42,11 +41,11 @@
 		</div>
 		<input type="Submit">
 	</form>
-	
-	
-	
-	
-	
+
+
+
+
+
 </body>
 
 
