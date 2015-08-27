@@ -17,6 +17,11 @@ public class AddEmployeeController {
 	private String name;
 	@Autowired
 	public EmployeeMapper employeeMapper;
+	
+	@RequestMapping(value = "addEmployee.mvc")
+	public String addEmployee() {
+		return "AddEmployee";
+	}
 
 	@RequestMapping(value = "newEmployee.mvc")
 	public String newEmployee(@RequestParam String firstname,
@@ -40,7 +45,7 @@ public class AddEmployeeController {
 	@RequestMapping(value = "addedEmployee.mvc")
 	public ModelAndView addedEmployee(ModelAndView modelAndView) {
 		
-		modelAndView.setViewName("addedEmployee");
+		modelAndView.setViewName("AddedEmployee");
 		modelAndView.addObject("employeeName", this.getName());
 		return modelAndView;
 		
