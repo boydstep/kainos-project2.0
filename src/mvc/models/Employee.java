@@ -10,6 +10,7 @@ public class Employee {
 	private String nationalInsuranceNumber;
 	private float startingSalary;
 	private String department;
+	private String bankDetails;
 
 	public Employee() {
 		employeeNumber++;
@@ -67,6 +68,17 @@ public class Employee {
 				nationalInsuranceNumber, startingSalary);
 		this.department = department;
 	}
+	
+	public Employee(int employeeNumber, String firstName, String lastName,
+			String houseNumber, String postCode,
+			String nationalInsuranceNumber, float startingSalary,
+			String department,String bankDetails) {
+		this(employeeNumber, firstName, lastName, houseNumber, postCode,
+				nationalInsuranceNumber, startingSalary,department);
+		this.bankDetails = bankDetails;
+	}
+	
+	
 
 	public int getEmployeeNumber() {
 		return employeeNumber;
@@ -130,6 +142,14 @@ public class Employee {
 
 	public void setDepartment(String department) {
 		this.department = department;
+	}
+
+	public String getBankDetails() {
+		return bankDetails;
+	}
+
+	public void setBankDetails(String bankDetails) {
+		this.bankDetails = bankDetails;
 	}
 
 	@Override
