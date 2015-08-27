@@ -13,67 +13,63 @@ public class Employee {
 	private String bankDetails;
 
 	public Employee() {
-		employeeNumber++;
+	
 	}
 
-	public Employee(int employeeNumber) {
-		super();
-		this.employeeNumber = employeeNumber;
-	}
 
-	public Employee(int employeeNumber, String firstName) {
+	public Employee(String firstName) {
 
-		this(employeeNumber);
+		
 		this.firstName = firstName;
 	}
 
-	public Employee(int employeeNumber, String firstName, String lastName) {
+	public Employee(String firstName, String lastName) {
 
-		this(employeeNumber, firstName);
+		this(firstName);
 		this.lastName = lastName;
 	}
 
-	public Employee(int employeeNumber, String firstName, String lastName,
+	public Employee(String firstName, String lastName,
 			String houseNumber) {
 
-		this(employeeNumber, firstName, lastName);
+		this(firstName, lastName);
 		this.houseNumber = houseNumber;
 	}
 
-	public Employee(int employeeNumber, String firstName, String lastName,
+	public Employee(String firstName, String lastName,
 			String houseNumber, String postCode) {
-		this(employeeNumber, firstName, lastName, houseNumber);
+		this(firstName, lastName, houseNumber);
 		this.postCode = postCode;
 	}
 
-	public Employee(int employeeNumber, String firstName, String lastName,
+	public Employee(String firstName, String lastName,
 			String houseNumber, String postCode, String nationalInsuranceNumber) {
-		this(employeeNumber, firstName, lastName, houseNumber, postCode);
+		this(firstName, lastName, houseNumber, postCode);
 		this.nationalInsuranceNumber = nationalInsuranceNumber;
 	}
 
-	public Employee(int employeeNumber, String firstName, String lastName,
+	public Employee(String firstName, String lastName,
 			String houseNumber, String postCode,
 			String nationalInsuranceNumber, float startingSalary) {
-		this(employeeNumber, firstName, lastName, houseNumber, postCode,
+		this(firstName, lastName, houseNumber, postCode,
 				nationalInsuranceNumber);
 		this.startingSalary = startingSalary;
 	}
 
-	public Employee(int employeeNumber, String firstName, String lastName,
+	public Employee(String firstName, String lastName,
 			String houseNumber, String postCode,
 			String nationalInsuranceNumber, float startingSalary,
 			String department) {
-		this(employeeNumber, firstName, lastName, houseNumber, postCode,
+		this(firstName, lastName, houseNumber, postCode,
 				nationalInsuranceNumber, startingSalary);
 		this.department = department;
 	}
 	
-	public Employee(int employeeNumber, String firstName, String lastName,
+	public Employee( String firstName, String lastName,
 			String houseNumber, String postCode,
 			String nationalInsuranceNumber, float startingSalary,
 			String department,String bankDetails) {
-		this(employeeNumber, firstName, lastName, houseNumber, postCode,
+		this(firstName, lastName, houseNumber, postCode,
 				nationalInsuranceNumber, startingSalary,department);
 		this.bankDetails = bankDetails;
 	}
