@@ -16,14 +16,16 @@
 			<label>First Name: </label><input name="firstname" placeholder="Joe">
 		</div>
 		<div>
-		<label>Surname: </label><input name="surname" placeholder="Bloggs">
+			<label>Surname: </label><input name="surname" placeholder="Bloggs">
 		</div>
 		<div>
-		<label>House No: </label><input name="house_number"
-			placeholder="02825767435">
+			<label>House No: </label><input name="house_number"
+				placeholder="02825767435">
 		</div>
 		<div>
-		<label>Postcode: </label><input name="postcode" placeholder="BT42 5VP"> </div>
+			<label>Postcode: </label><input name="postcode"
+				placeholder="BT42 5VP">
+		</div>
 		<div>
 			<label>National Insurance Number: </label><input
 				name="national_insurance_number" placeholder="JL514198Y">
@@ -41,13 +43,6 @@
 		</div>
 		<input type="Submit">
 	</form>
-
-
-
-
-
 </body>
-
-
 </html>
 
